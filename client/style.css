@@ -15,4 +15,28 @@ You should use CSS Variables to set up a color theme.
 body {
   font-family: 'Roboto Condensed', sans-serif;
   background-image: linear-gradient(to bottom, #f9b32c, #ff8849, #ff587d, #ff40bd, #ce5cfc);
+  text-align: center;
+}
+
+h1 {
+  color: var(--secondary-color);
+  font-size: 3em;
+  text-shadow: 2px 2px var(--tertiary-color);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div {
+  margin-bottom: 2em;
+}
+
+button {
+  color: white;
+  background: var(--secondary-color);
+  border: none;
+  box-shadow: 2px 2px #ddd;
 }
