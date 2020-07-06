@@ -4,3 +4,15 @@ You should use CSS Variables to set up a color theme.
 
 
  */
+
+:root {
+  /* Add custom colors here */
+  --primary-color: #F9B32C;
+  --secondary-color: #00ACBD;
+  --tertiary-color: #CE5CFC;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-image: linear-gradient(to bottom, #f9b32c, #ff8849, #ff587d, #ff40bd, #ce5cfc);
+}
