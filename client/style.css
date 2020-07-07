@@ -1,26 +1,22 @@
-/* TODO: Style your store as best as you can. You should use some flex box to have a 'nice grid' display. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ is a good general guide to explore with.
-
-You should use CSS Variables to set up a color theme.
-
-
- */
-
 :root {
   /* Add custom colors here */
   --primary-color: #F9B32C;
   --secondary-color: #00ACBD;
   --tertiary-color: #CE5CFC;
+  --dark-secondary: #007b86;
 }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
   background-image: linear-gradient(to bottom, #f9b32c, #ff8849, #ff587d, #ff40bd, #ce5cfc);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 10px;
   text-align: center;
 }
 
 h1 {
   color: var(--secondary-color);
-  font-size: 3em;
+  font-size: 7.451em;
+  text-decoration: underline;
   text-shadow: 2px 2px var(--tertiary-color);
 }
 
@@ -34,9 +30,32 @@ div {
   margin-bottom: 2em;
 }
 
-button {
+img {
+  border: 2px ridge var(--secondary-color);
+  transition: transform 0.2s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+figcaption {
   color: white;
+  font-size: 1.953em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+button {
   background: var(--secondary-color);
   border: none;
   box-shadow: 2px 2px #ddd;
+  color: white;
+  font-size: 1.563em;
+  transition: background 0.5s;
+}
+
+button:hover {
+  background: var(--dark-secondary);
+  cursor: pointer;
 }
