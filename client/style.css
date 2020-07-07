@@ -1,6 +1,37 @@
-/* TODO: Style your store as best as you can. You should use some flex box to have a 'nice grid' display. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ is a good general guide to explore with.
+:root {
+  --primary-color: #FF0000;
+  --secondary-color: #009B49;
+  --tertiary-color: #0081FF;
+}
 
-You should use CSS Variables to set up a color theme.
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-size: 10px;
+}
 
- */
+h1,
+figcaption {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+figcaption {
+  font-size: 1.9em;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 1em;
+}
