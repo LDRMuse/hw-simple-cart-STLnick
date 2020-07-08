@@ -20,6 +20,10 @@ h1 {
   text-shadow: 2px 2px var(--tertiary-color);
 }
 
+#cartBtn {
+  background-color: var(--tertiary-color);
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
