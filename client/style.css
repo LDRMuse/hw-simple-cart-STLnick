@@ -24,6 +24,24 @@ h1 {
   background-color: var(--tertiary-color);
 }
 
+#cart-container {
+  border: 2px solid var(--tertiary-color);
+  margin: auto;
+  margin-bottom: 2em;
+  max-width: 80%;
+}
+
+#cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-list li {
+  color: white;
+  font-size: 1.563em;
+  margin-bottom: 1em;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
