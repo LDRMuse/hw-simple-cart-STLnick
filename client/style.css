@@ -1,37 +1,54 @@
 :root {
-  --primary-color: #FF0000;
+  --primary-color: #845EC2;
   --secondary-color: #009B49;
   --tertiary-color: #0081FF;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-size: 10px;
+  background-image: linear-gradient(to right, var(--secondary-color), var(--tertiary-color));
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+  letter-spacing: 0.1em;
 }
 
 h1,
 figcaption {
+  color: var(--primary-color);
   text-align: center;
+  text-shadow: 0 0 5px white;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 2em;
+}
+
+figure {
+  margin-bottom: 0.75em;
 }
 
 figcaption {
-  font-size: 1.9em;
+  font-size: 0.95em;
+  margin-top: 0.3em;
 }
 
 div {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-bottom: 1em;
 }
 
 button {
-  padding: 1em;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 2em;
+  color: white;
+  font-size: 0.8em;
+  max-width: 10em;
+  padding: 0.5em;
+}
+
+button span {
+  margin-left: 0.5em;
+  text-shadow: 0 0 1px white;
 }
