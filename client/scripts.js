@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll('button')
+const itemButtons = document.querySelectorAll('button')
 const cart = []
 
 // Check to see if an item is in the cart
@@ -10,7 +10,7 @@ const checkInCart = (name, cart) => {
   return isInCart
 }
 
-buttons.forEach((btn) => {
+itemButtons.forEach((btn) => {
   btn.addEventListener('click', (e) => {
     /* Add item to cart ========= */
     // Get item name
