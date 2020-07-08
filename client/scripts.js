@@ -20,8 +20,8 @@ const renderItem = (item, index) => {
 }
 
 const updateItem = (item) => {
-  const markup = `${item.name} - Quantity: ${item.qty}`
-  cartList.querySelector(`#${item.id}`).textContent = markup
+  const text = `${item.name} - Quantity: ${item.qty}`
+  cartList.querySelector(`#${item.id}`).textContent = text
 }
 
 /* Add item to cart ============= */
