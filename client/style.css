@@ -75,3 +75,7 @@ button:hover {
 button span {
   margin-left: 0.4em;
 }
+
+.hidden {
+  display: none;
+}
