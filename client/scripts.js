@@ -3,11 +3,9 @@ const cart = []
 
 const checkInCart = (name, cart) => {
   let isInCart = false
-
   cart.forEach((item) => {
     if (item.name === name) { isInCart = true }
   })
-
   return isInCart
 }
 
@@ -17,7 +15,6 @@ buttons.forEach((btn) => {
     /* Add object to cart ======= */
     // Grab text from clicked item
     const itemText = e.target.previousElementSibling.querySelector('figcaption').textContent
-
     // If item is in cart just increase qty by 1
     if (checkInCart(itemText, cart)) {
       const itemIndex = cart.findIndex(item => item.name === itemText)
