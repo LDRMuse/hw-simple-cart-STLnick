@@ -1,16 +1,34 @@
-// TODO: Use `querySelectorAll` to create a 'NodeList' of all of the 'buttons'
-// Iterate over that and add event listeners to each one.
-// The event listener should listen for a 'click.' When we click it should say 'clicked'
 const buttons = document.querySelectorAll('button')
+const cart = []
 
-// for (let i = 0; i < buttons.length; i++) {
-//   buttons[i].addEventListener('click', (e) => {
-//     alert('Clicked!')
-//   })
-// }
+const checkInCart = (name, cart) => {
+  let isInCart = false
 
-buttons.forEach((button) => {
-  button.addEventListener('click', (e) => {
-    alert('Clicked!')
+  cart.forEach(item => {
+    if (item.name === name) { isInCart = true }
+  })
+
+  console.log(isInCart)
+
+  return isInCart
+}
+
+buttons.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    console.log('Clicked!')
+
+    /* Add item to cart ========= */
+    // Get item name
+    const itemText = btn.previousElementSibling.querySelector('figcaption').textContent
+
+    // If item is in cart increase qty by 1
+    if (checkInCart(itemText, cart)) {
+      const itemIndex = cart.findIndex(item => item.name === itemText)
+      cart[itemIndex].qty++
+      // Else add new object with itemText as name and qty 1
+    } else {
+      const newItem = { name: itemText, qty: 1 }
+      cart.push(newItem)
+    }
   })
 })
