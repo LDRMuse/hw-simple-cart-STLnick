@@ -29,6 +29,7 @@ h1 {
   margin: auto;
   margin-bottom: 2em;
   max-width: 80%;
+  min-height: 4em;
 }
 
 #cart-list {
