@@ -34,9 +34,10 @@ itemButtons.forEach((btn) => {
     if (checkInCart(itemText, cart)) {
       // Update cart array quantity
       const itemIndex = cart.findIndex(item => item.name === itemText)
-      cart[itemIndex].qty++
+      const itemToUpdate = cart[itemIndex]
+      itemToUpdate.qty++
       // Update UI
-      updateItem(cart[itemIndex])
+      updateItem(itemToUpdate)
       // Else add new object with itemText as name and qty 1
     } else {
       const newItem = { name: itemText, qty: 1, id: `item-${cart.length}` }
