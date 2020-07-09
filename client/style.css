@@ -25,6 +25,7 @@ h1 {
 }
 
 #cart-container {
+  background: rgba(206, 92, 252, 0.3);  /* --tertiary-color in rgba */
   border: 2px solid var(--tertiary-color);
   margin: auto;
   margin-bottom: 2em;
