@@ -4,13 +4,12 @@
   "description": "A simple vanilla front-end shopping cart simulator",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --server --files '*.html, *.css, *.js'"
+    "start": "parcel index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.2",
@@ -19,6 +18,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "htmlhint": "^0.11.0",
+    "parcel-bundler": "^1.12.4",
     "standard": "^14.3.3",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
