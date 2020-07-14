@@ -1,5 +1,6 @@
 :root {
   --primary-color: #845EC2;
+  --primary-dark: #6b4b9e;
   --secondary-color: #009B49;
   --tertiary-color: #0081FF;
 }
@@ -45,7 +46,15 @@ button {
   color: white;
   font-size: 0.8em;
   max-width: 10em;
+  outline: none;
   padding: 0.5em;
+  transition: background, box-shadow 0.4s;
+}
+
+button:focus,
+button:hover {
+  background: var(--primary-dark);
+  box-shadow: 0 0 2px 3px #eee;
 }
 
 button span {
