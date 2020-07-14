@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #845EC2;
+  --primary-color: #845ec2;
   --primary-dark: #6b4b9e;
-  --secondary-color: #009B49;
-  --tertiary-color: #0081FF;
+  --secondary-color: #009b49;
+  --tertiary-color: #0081ff;
 }
 
 body {
@@ -10,6 +10,34 @@ body {
   font-family: 'Bangers', cursive;
   font-size: 20px;
   letter-spacing: 0.1em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.815em;
+  text-decoration: underline;
+}
+
+#cartBtn {
+  background-color: var(--tertiary-color);
+}
+
+#cart-container {
+  background: rgba(132, 94, 194, 0.5);
+  border: 2px solid var(--tertiary-color);
+  margin: auto;
+  margin-bottom: 2em;
+  max-width: 80%;
+  min-height: 4em;
+}
+
+#cart-list {
+  list-style: none;
+  padding: 0.5em 2em;
+}
+
+.cart-item {
+  color: white;
 }
 
 h1,
@@ -17,10 +45,6 @@ figcaption {
   color: var(--primary-color);
   text-align: center;
   text-shadow: 0 0 5px white;
-}
-
-h1 {
-  font-size: 2em;
 }
 
 figure {
@@ -60,4 +84,8 @@ button:hover {
 button span {
   margin-left: 0.5em;
   text-shadow: 0 0 1px white;
+}
+
+.hidden {
+  display: none;
 }

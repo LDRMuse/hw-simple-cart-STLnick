@@ -6,7 +6,7 @@ export default () => {
         <img src="https://source.unsplash.com/random/320x240" alt="Random Image">
           <figcaption>Item ${i}</figcaption>
       </figure>
-        <button type="button">Add 2 Cart <span>🛒</span></button>
+        <button type="button" class="item-btn">Add 2 Cart <span>🛒</span></button>
     </div>
     `
   }
