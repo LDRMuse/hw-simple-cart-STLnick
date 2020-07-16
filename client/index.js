@@ -47,8 +47,8 @@ const props = {
   ]
 }
 
-function render() {
-  HTMLRoot.innerHTML = Item(props.Item)
+function render(props) {
+  HTMLRoot.innerHTML = Item(props)
 
   const buttons = document.querySelectorAll('button')
   const cart = []
@@ -74,4 +74,4 @@ function render() {
   })
 }
 
-render()
+render(props)

@@ -1,4 +1,4 @@
-function render(divs) {
+function render({ Item: divs }) {
   return divs.reduce((acc, cur) => {
     return acc + `
     <div>
